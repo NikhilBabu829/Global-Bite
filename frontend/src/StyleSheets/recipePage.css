@@ -1,0 +1,77 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #495057;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.recipe-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.recipe-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.recipe-content {
+    padding: 20px;
+}
+
+.recipe-content p {
+    margin: 10px 0;
+}
+
+.recipe-content strong {
+    display: inline-block;
+    min-width: 140px;
+    font-weight: bold;
+    color: #495057;
+}
+
+.json-content {
+    font-style: italic;
+    color: #6c757d;
+}
+
+.footer {
+    text-align: center;
+    color: #868e96;
+    font-size: 14px;
+    padding: 15px 0;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 20px;
+}
